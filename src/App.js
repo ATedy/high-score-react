@@ -24,7 +24,7 @@ function App() {
       {allCountryScores.map((country) => (
         <div className="card-header">
           <CountryName oneCountry={country} />
-          <PlayerScore countryScore={country.scores} />
+          <PlayerScore oneCountryScore={country.scores} />
         </div>
       ))}
     </div>
