@@ -6,6 +6,7 @@ import PlayerScore from "./PlayerScore";
 
 function App() {
   allCountryScores.sort((a, b) => {
+    // sorting the countries based on their names
     let x = a.name.toLowerCase();
     let y = b.name.toLowerCase();
     if (x < y) {
