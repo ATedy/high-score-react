@@ -28,12 +28,18 @@ function App() {
     return 0;
   });
 
+  /* 
+    We have 2 conditions inside the return
+    1. will change the button text based on the state of the countryView variable
+    2. Will render either all the score or of each country based on the countryView variable
+  */
   return (
     <div className="card">
       <h3 className="text-center">High Scores per Country</h3>
       <button onClick={viewHandler}>
         {countryView ? " All-Country-HighScore" : "Country-HighScore"}
       </button>
+
       {countryView ? (
         allCountryScores.map((country) => (
           <div className="card-header">

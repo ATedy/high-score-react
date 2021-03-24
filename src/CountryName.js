@@ -1,5 +1,6 @@
 import React from "react";
 
+// as props this component will receive a single country object from the array
 const CountryName = (props) => {
   return (
     <p className="text-center">
