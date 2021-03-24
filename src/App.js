@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="card">
       <h3 className="text-center">High Scores per Country</h3>
-      <button onClick={viewHandler}>
+      <button className="btn btn-secondary" onClick={viewHandler}>
         {countryView ? " All-Country-HighScore" : "Country-HighScore"}
       </button>
 
