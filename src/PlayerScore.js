@@ -9,7 +9,7 @@ const PlayerScore = (props) => {
     <ul className="list-group">
       {props.oneCountryScore.map((score, index) => (
         <li className="list-group-item" key={index}>
-          {score.n.toUpperCase()} {score.s}{" "}
+          {score.n.toUpperCase()}&nbsp; &nbsp;{score.s}{" "}
         </li>
       ))}
     </ul>
