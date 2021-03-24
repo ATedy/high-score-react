@@ -6,7 +6,7 @@ import PlayerScore from "./PlayerScore";
 
 function App() {
   // based on this state page will render either all countires or for each country
-  const [countryView, setCountryView] = useState(false);
+  const [countryView, setCountryView] = useState(true);
 
   function viewHandler() {
     setCountryView(!countryView);
@@ -37,7 +37,7 @@ function App() {
     <div className="card">
       <h3 className="text-center">High Scores per Country</h3>
       <button className="btn btn-secondary" onClick={viewHandler}>
-        {countryView ? " All-Country-HighScore" : "Country-HighScore"}
+        {countryView ? " All-Country-HighScore" : "Each-Country-HighScore"}
       </button>
 
       {countryView ? (
