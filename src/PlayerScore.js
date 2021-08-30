@@ -14,6 +14,6 @@ const PlayerScore = (props) => {
       ))}
     </ul>
   );
-};
+}; 
 
 export default PlayerScore;
